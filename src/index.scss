@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Cropar';
+    src: url('./assets/fonts/Cropar.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dagesta';
+    src: url('./assets/fonts/DAGESTA.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Herculanum';
+    src: url('./assets/fonts/Herculanum-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $bg-color: #000000;
 $text-color: #ffffff;
 
@@ -7,7 +28,9 @@ $textFont: 22px;
 $mediumFont: 18px;
 $smailFont: 16px;
 
-$primary_font: 'Herculanum';
+$primary_font: 'Herculanum', sans-serif;
+$secondary_font: 'Cropar';
+$outline_font: 'Dagesta';
 
 $breakpoint1366: 1365.98 + px;
 $breakpoint992: 991.98 + px;
@@ -38,8 +61,6 @@ body {
 }
 
 .header {
-    font-family: 'Cropar';
-
     height: 80px;
     &__links {
         display: flex;
@@ -50,6 +71,13 @@ body {
     &__link {
         font-size: $titleFont;
         text-align: center;
+        font-family: $outline_font;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: normal;
+        @media (max-width: $breakpoint768) {
+            font-size: 28px;
+        }
     }
 }
 
@@ -109,7 +137,7 @@ body {
 
         &__title {
             position: relative;
-            font-family: 'Cropar';
+            font-family: $secondary_font;
             font-style: normal;
             font-weight: 500;
             font-size: 64px;
@@ -127,12 +155,17 @@ body {
             text-fill-color: transparent;
             @media (max-width: $breakpoint768) {
                 font-size: $titleFont;
+
                 margin-top: -60px;
                 line-height: 30px;
+                p {
+                    padding: 0 10px;
+                }
             }
             @media (max-width: $breakpoint480) {
                 font-size: 22px;
-                margin-top: -40px;
+                padding: 20px;
+                margin-top: -60px;
                 line-height: 20px;
             }
         }
@@ -486,19 +519,15 @@ body {
             }
         }
 
-        &__boxText {
-            grid-area: boxText;
-            text-align: center;
-        }
         &__step {
             display: none;
             @media (max-width: $breakpoint480) {
-                width: 100%;
                 color: #000;
-                width: 30px;
-                height: 30px;
-                font-size: $titleFont;
+
+                font-size: $textFont;
                 display: flex;
+                height: 30px;
+                width: 30px;
                 border-radius: 50%;
                 background-color: #fff;
                 align-items: center;
@@ -607,7 +636,7 @@ body {
     width: 100%;
     text-decoration: none;
     button {
-        font-family: 'DAGESTA';
+        font-family: $outline_font;
         font-style: normal;
         font-weight: 400;
         font-size: $titleFont;
@@ -645,30 +674,47 @@ body {
 }
 
 .footer {
-    width: 100%;
+    width: 90%;
     height: 217px;
     border-top: 1px solid #aaaaaa;
-    backdrop-filter: blur(2px);
+
     font-size: $textFont;
     color: $text-color;
     &__box {
         text-transform: uppercase;
         display: flex;
         justify-content: center;
+        @media (max-width: $breakpoint768) {
+            flex-direction: column;
+            border: none;
+        }
     }
 
     &__items {
         margin-top: 50px;
         display: flex;
         align-items: center;
+        text-align: center;
         justify-content: center;
         border-right: 1px solid $text-color;
         &:last-child {
+            border-right: none;
             cursor: pointer;
             text-decoration: underline;
             &:hover {
                 color: #fff;
             }
+        }
+        @media (max-width: $breakpoint1366) {
+            font-size: $mediumFont;
+        }
+        @media (max-width: $breakpoint992) {
+            font-size: 14px;
+        }
+        @media (max-width: $breakpoint768) {
+            margin-top: 20px;
+            font-size: $mediumFont;
+            border: none;
         }
     }
 

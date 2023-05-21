@@ -23,10 +23,12 @@ const App = () => {
                         </div>
 
                         <div className="section__title">
-                            PEACEFULL WARRIOR <br /> TOKEN
+                            <p>
+                                PEACEFULL WARRIOR <br /> TOKEN
+                            </p>
                         </div>
                     </div>
-                    <Button text="buy token" />
+                    <Button text="BUY PWT" />
                 </div>
                 <div id="about" className="about">
                     <Title text="LEGEND" />
@@ -80,7 +82,7 @@ const App = () => {
                         <div className="about__sectionImage3">
                             <img src={coin_image} alt="moon_warrior" width={300} height={350} />
                         </div>
-                        <Button text={'BUY TOKEN'} />
+                        <Button text={'BUY PWT'} />
                     </div>
                 </div>
                 <div id="roadmap" className="roadmap">

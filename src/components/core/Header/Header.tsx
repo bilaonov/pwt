@@ -1,8 +1,9 @@
+import '../../../index.scss'
 const Header = () => {
     return (
         <div className="header">
             <div className="header__links">
-                <div className="header__link">PWT</div>
+                <p className="header__link">PWT</p>
             </div>
         </div>
     )
