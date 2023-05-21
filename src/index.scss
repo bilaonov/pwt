@@ -7,7 +7,6 @@ $textFont: 22px;
 $mediumFont: 18px;
 $smailFont: 16px;
 
-
 $breakpoint1366: 1365.98 + px;
 $breakpoint992: 991.98 + px;
 $breakpoint768: 767.98 + px;
@@ -21,12 +20,11 @@ $breakpoint480: 479.98 + px;
 }
 
 body {
-    font-family: 'Herculanum';
-
     background-color: black;
     width: 100%;
     color: white;
     max-width: 1920px;
+    font-family: 'Herculanum';
 }
 
 .container {
@@ -674,6 +672,7 @@ body {
         text-align: center;
         justify-content: center;
         border-right: 1px solid $text-color;
+
         &:last-child {
             border-right: none;
             cursor: pointer;
