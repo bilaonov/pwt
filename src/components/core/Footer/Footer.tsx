@@ -8,12 +8,13 @@ const Footer = () => {
                 <div className="footer__items">
                     Total supply: <br /> 100,000,000,000 <br /> Tax - 6% / 6%
                 </div>
+
+                <div className="footer__items">
+                    LP Lock - 3 months <br /> Max Wallet - 1%
+                </div>
                 <div className="footer__items">
                     - Mcap 600K + 3 months <br /> - Mcap 1M+ + 3 months <br /> - Mcap 2M+ + 3 months{' '}
                     <br />- Mcap 5M+ + 10 years
-                </div>
-                <div className="footer__items">
-                    LP Lock - 3 months <br /> Max Wallet - 1%
                 </div>
                 <div className="footer__items">contract </div>
             </div>
