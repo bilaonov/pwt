@@ -1,24 +1,3 @@
-@font-face {
-    font-family: 'Cropar';
-    src: url('./assets/fonts/Cropar.otf') format('otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Dagesta';
-    src: url('./assets/fonts/DAGESTA.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Herculanum';
-    src: url('./assets/fonts/Herculanum-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 $bg-color: #000000;
 $text-color: #ffffff;
 
@@ -28,9 +7,6 @@ $textFont: 22px;
 $mediumFont: 18px;
 $smailFont: 16px;
 
-$primary_font: 'Herculanum', sans-serif;
-$secondary_font: 'Cropar';
-$outline_font: 'Dagesta';
 
 $breakpoint1366: 1365.98 + px;
 $breakpoint992: 991.98 + px;
@@ -45,7 +21,8 @@ $breakpoint480: 479.98 + px;
 }
 
 body {
-    font-family: $primary_font;
+    font-family: 'Herculanum';
+
     background-color: black;
     width: 100%;
     color: white;
@@ -71,7 +48,7 @@ body {
     &__link {
         font-size: $titleFont;
         text-align: center;
-        font-family: $outline_font;
+        font-family: 'Dagesta';
         font-size: 42px;
         font-style: normal;
         font-weight: normal;
@@ -137,7 +114,7 @@ body {
 
         &__title {
             position: relative;
-            font-family: $secondary_font;
+            font-family: 'Cropar';
             font-style: normal;
             font-weight: 500;
             font-size: 64px;
@@ -636,7 +613,7 @@ body {
     width: 100%;
     text-decoration: none;
     button {
-        font-family: $outline_font;
+        font-family: 'Dagesta';
         font-style: normal;
         font-weight: 400;
         font-size: $titleFont;
@@ -754,4 +731,25 @@ body {
     @media (max-width: $breakpoint768) {
         font-size: 32px;
     }
+}
+
+@font-face {
+    font-family: 'Cropar';
+    src: url('../public/Cropar.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dagesta';
+    src: url('../public/DAGESTA.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Herculanum';
+    src: url('../public/Herculanum-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
