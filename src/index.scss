@@ -7,6 +7,7 @@ $textFont: 22px;
 $mediumFont: 18px;
 $smailFont: 16px;
 
+
 $breakpoint1366: 1365.98 + px;
 $breakpoint992: 991.98 + px;
 $breakpoint768: 767.98 + px;
@@ -734,21 +735,21 @@ body {
 
 @font-face {
     font-family: 'Cropar';
-    src: url('../dist/Cropar.otf') format('otf');
+    src: url('../public/Cropar.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Dagesta';
-    src: url('../dist/DAGESTA.ttf') format('ttf');
+    src: url('../public/DAGESTA.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Herculanum';
-    src: url('../dist/Herculanum-Regular.ttf') format('ttf');
+    src: url('../public/Herculanum-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
