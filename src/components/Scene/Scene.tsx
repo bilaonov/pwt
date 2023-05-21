@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 import { GLTF, OrbitControls } from 'three-stdlib'
@@ -21,7 +21,7 @@ export function Model(props: JSX.IntrinsicElements['group']) {
     useEffect(() => {
         camera.position.z = 1.9 // Увеличиваем расстояние между камерой и моделью
     }, [camera])
-    const groupRef = useRef<THREE.Group>()
+    const groupRef = useRef<any>()
 
     const { nodes, materials } = useGLTF('/coin/scene.gltf') as GLTFResult
 

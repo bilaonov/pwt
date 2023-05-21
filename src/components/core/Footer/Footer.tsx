@@ -1,4 +1,4 @@
-import React from 'react'
+
 import telegramImage from '../../../assets/telegram.svg'
 import twitterImage from '../../../assets/twitter.svg'
 import dextoolsImage from '../../../assets/dextools.svg'
