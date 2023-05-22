@@ -1,7 +1,7 @@
 import Canvas from './components/Canvas/Canvas'
 import Layout from './components/core/Layout/Layout'
 import warrior from './assets/warrior1.png'
-import moon_warrior from './assets/moonaawarrior.png'
+import moon_warrior from './assets/moonwarrior.png'
 import valley from './assets/valley.png'
 import coin_image from './assets/coin.png'
 import './index.scss'
@@ -47,8 +47,7 @@ const App = () => {
                             to feel free. Anyone who shares their worldview and is willing to defend
                             justice can join.
                         </div>
-                        <div className="about__sectionImage">
-                            <div className="about__sectionElipse"></div>
+                        <div className="about__sectionImage ">
                             <img src={moon_warrior} alt="moon_warrior" width={550} height={550} />
                         </div>
                     </div>
@@ -87,6 +86,11 @@ const App = () => {
                 </div>
                 <div id="roadmap" className="roadmap">
                     <Title text="ROADMAP" />
+                    <div className='roadmap__text'>
+                        The Peaceful Warrior Project br is a long-term project, <br /> and we
+                        believe in a carefully planned timeline for providing each step we will
+                        make!
+                    </div>
                     <div className="roadmap__section">
                         <div className="roadmap__box">
                             <p className="roadmap__step">1</p>
