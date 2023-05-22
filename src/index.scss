@@ -686,9 +686,15 @@ body {
             font-family: 'Cropar';
         }
         &:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             border-right: none;
-            cursor: pointer;
-            text-decoration: underline;
+            a {
+                width: auto;
+                color: #fff;
+            }
             &:hover {
                 color: #fff;
             }
@@ -714,6 +720,12 @@ body {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        p {
+            &:first-child {
+                width: auto;
+                border-bottom: 1px solid #fff;
+            }
+        }
         span {
             font-family: 'Cropar';
         }
@@ -742,6 +754,9 @@ body {
     &__socialLink {
         display: flex;
         gap: 20px;
+        a {
+            width: auto;
+        }
     }
 }
 .canvas {
