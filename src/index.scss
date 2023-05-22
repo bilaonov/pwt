@@ -682,7 +682,9 @@ body {
         text-align: center;
         justify-content: center;
         border-right: 1px solid $text-color;
-
+        span {
+            font-family: 'Cropar';
+        }
         &:last-child {
             border-right: none;
             cursor: pointer;
@@ -691,6 +693,31 @@ body {
                 color: #fff;
             }
         }
+        @media (max-width: $breakpoint1366) {
+            font-size: $mediumFont;
+        }
+        @media (max-width: $breakpoint992) {
+            font-size: 14px;
+        }
+        @media (max-width: $breakpoint768) {
+            margin-top: 20px;
+            font-size: $mediumFont;
+            border: none;
+        }
+    }
+
+    &__items2 {
+        margin-top: 50px;
+        width: 100%;
+        border-right: 1px solid $text-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        span {
+            font-family: 'Cropar';
+        }
+
         @media (max-width: $breakpoint1366) {
             font-size: $mediumFont;
         }
