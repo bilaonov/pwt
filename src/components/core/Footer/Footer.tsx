@@ -13,8 +13,8 @@ const Footer = () => {
                     LP Lock - 3 months <br /> Max Wallet - 1%
                 </div>
                 <div className="footer__items">
-                    - Mcap 600K + 3 months <br /> - Mcap 1M+ + 3 months <br /> - Mcap 2M+ + 3 months{' '}
-                    <br />- Mcap 5M+ + 10 years
+                    • Mcap 600K - 3 months <br /> • Mcap 1M - 3 months <br /> • Mcap 2M - 3 months{' '}
+                    <br />• Mcap 5M - 10 years
                 </div>
                 <div className="footer__items">contract </div>
             </div>
