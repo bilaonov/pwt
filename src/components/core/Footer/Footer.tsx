@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="footer">
             <div className="footer__box">
                 <div className="footer__items">
-                    Total supply: <br /> 100,000,000,000 <br /> Tax - 6% / 6%
+                    Total supply: <br /> 100,000,000,000 <br /> Tax - 6% / 6% <br /> Max Wallet - 1%
                 </div>
 
                 <div className="footer__items2">
@@ -26,7 +26,6 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="footer__items">
-                    <p>Max Wallet - 1%</p>
                     <a href="#">contract</a>
                 </div>
             </div>
