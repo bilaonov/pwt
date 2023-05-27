@@ -39,7 +39,7 @@ const Footer = () => {
                     <a href="https://t.me/Peaceful_Warrior_Token" target="_blank">
                         <img src={telegramImage} alt="telegram" width={30} height={30} />
                     </a>
-                    <a href="https://twitter.com/peacefulwarr1" target="_blank">
+                    <a href="https://twitter.com/peacefulwt83215" target="_blank">
                         <img src={twitterImage} alt="telegram" width={30} height={30} />
                     </a>
                     <a
