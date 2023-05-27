@@ -26,18 +26,26 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="footer__items">
-                    <a href="#">contract</a>
+                    <a
+                        href="https://bscscan.com/address/0xaf4774c26fc3b4d238d9f04821316c4ec553c0c3"
+                        target="_blank"
+                    >
+                        contract
+                    </a>
                 </div>
             </div>
             <div className="footer__social">
                 <div className="footer__socialLink">
-                    <a href="#">
+                    <a href="https://t.me/Peaceful_Warrior_Token" target="_blank">
                         <img src={telegramImage} alt="telegram" width={30} height={30} />
                     </a>
-                    <a href="#">
+                    <a href="https://twitter.com/peacefulwt83215" target="_blank">
                         <img src={twitterImage} alt="telegram" width={30} height={30} />
                     </a>
-                    <a href="#">
+                    <a
+                        href="https://www.dextools.io/app/bnb/pair-explorer/0x3f8607ac6d69a195da5acb779bf434d82e781a9e"
+                        target="_blank"
+                    >
                         <img src={dextoolsImage} alt="telegram" width={30} height={30} />
                     </a>
                 </div>
