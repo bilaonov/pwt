@@ -86,7 +86,7 @@ const App = () => {
                 </div>
                 <div id="roadmap" className="roadmap">
                     <Title text="ROADMAP" />
-                    <div className='roadmap__text'>
+                    <div className="roadmap__text">
                         The Peaceful Warrior Project br is a long-term project, <br /> and we
                         believe in a carefully planned timeline for providing each step we will
                         make!
